@@ -49,12 +49,53 @@ const removerElementosSeApenasNumero = (array) => {
     })
 }
 
+const removeSimbolos = (simbolos) => {
+    return (array) => {
+        return array.map(el => {
+            return simbolos.reduce((acc, simbolo) => {
+                return acc.split(simbolo).join('')
+            }, el)
+        })
+    }
+}
+
+const mesclarConteudos = (conteudos) => conteudos.join(' ')
+
+const separarTextoPor = (simbolo) => {
+    return (texto) => {
+        return texto.split(simbolo)
+    }
+}
+
+const agruparElementos = (palavras) => {
+    return Object.values(palavras.reduce((acc, palavra) => {
+        const el = palavra.toLowerCase()
+        const qtde = acc[el] ? acc[el].qtde + 1 : 1
+
+        acc[el] = { elemento: el, qtde }
+        return acc
+    }, {}))
+}
+
+const ordernarPorAtributoNumerico = (atributo, ordem = 'asc') => {
+    return (array) => {
+        const asc = (o1, o2) => o1[atributo] - o2[atributo]
+        const desc = (o1, o2) => o2[atributo] - o1[atributo]
+        return array.sort(ordem === 'asc' ? asc : desc)
+    }
+}
+
 module.exports = {
     lerDiretorio,
     lerArquivo,
     lerArquivos,
+    removeSimbolos,
+    separarTextoPor,
+    mesclarConteudos,
+    agruparElementos,
     elementosTerminadosCom,
     removerElementosSeVazio,
     removerElementosSeIncluir,
+    ordernarPorAtributoNumerico,
     removerElementosSeApenasNumero
 }
