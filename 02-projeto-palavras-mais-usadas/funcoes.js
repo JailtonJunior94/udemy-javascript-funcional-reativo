@@ -81,7 +81,7 @@ const ordernarPorAtributoNumerico = (atributo, ordem = 'asc') => {
     return (array) => {
         const asc = (o1, o2) => o1[atributo] - o2[atributo]
         const desc = (o1, o2) => o2[atributo] - o1[atributo]
-        return array.sort(ordem === 'asc' ? asc : desc)
+        return [...array].sort(ordem === 'asc' ? asc : desc)
     }
 }
 
