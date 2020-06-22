@@ -1,0 +1,11 @@
+{
+  "name": "udemy-javascript-funcional-reativo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/JailtonJunior94/udemy-javascript-funcional-reativo.git",
+  "author": "Jailton Junior <jailton.junior94@outlook.com>",
+  "license": "MIT",
+  "dependencies": {
+    "rxjs": "^6.5.5"
+  }
+}
