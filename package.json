@@ -6,6 +6,7 @@
   "author": "Jailton Junior <jailton.junior94@outlook.com>",
   "license": "MIT",
   "dependencies": {
-    "rxjs": "^6.5.5"
+    "rxjs": "^6.5.5",
+    "xmlhttprequest": "^1.8.0"
   }
 }
