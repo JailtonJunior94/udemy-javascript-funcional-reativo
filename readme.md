@@ -29,5 +29,5 @@ Compreender o paradigma funcional é importante mesmo que você use linguagens O
 ## Udemy
 [JavaScript Funcional e Reativo - PENSE como um Dev JS [2020]](https://www.udemy.com/course/javascript-funcional/)
 
-<!-- ## Certificado
-![Screenshot](/readme-images/AWS-CloudNative-Terraform-Serverless.jpg) -->
+## Certificado
+![Screenshot](/08-readme-images/UC-a4577573-aaef-471b-8f06-9bcdd874c21f.jpg)
